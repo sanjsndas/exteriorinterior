@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Exterior Interior Dialogue</title>
+  <meta name="description" content="Get in touch with the editorial team at Exterior Interior Dialogue. Submit story tips, project features, or general inquiries.">
+  <link rel="canonical" href="https://www.exteriorinteriordialogue.com/contact.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact — Exterior Interior Dialogue">
+  <meta property="og:description" content="Get in touch with the editorial team at Exterior Interior Dialogue. Submit story tips, project features, or general inquiries.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.exteriorinteriordialogue.com/contact.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=630&fit=crop">
+  <style>
+    /* RESET & BASE */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --ink: #1e1e1e;
+      --paper: #faf9f7;
+      --warm-white: #fefdfb;
+      --stone: #e8e5e0;
+      --stone-dark: #d1ccc5;
+      --accent: #9b7b5b;
+      --accent-light: #c4a88a;
+      --muted: #6b6560;
+      --border: #e0dcd6;
+      --serif: 'Georgia', 'Times New Roman', serif;
+      --sans: 'Helvetica Neue', 'Arial', sans-serif;
+      --max-width: 1280px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--serif);
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.7;
+      font-size: 17px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: var(--ink);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    /* UTILITY */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* HEADER */
+    .site-header {
+      border-bottom: 1px solid var(--border);
+      background: var(--paper);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 0;
+    }
+
+    .logo {
+      font-family: var(--serif);
+      font-size: 1.6rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      line-height: 1.1;
+      color: var(--ink);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .logo span {
+      font-family: var(--sans);
+      font-size: 0.6rem;
+      font-weight: 400;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+      font-family: var(--sans);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      padding-bottom: 4px;
+      border-bottom: 1px solid transparent;
+    }
+
+    .nav-links a:hover {
+      color: var(--ink);
+      border-bottom-color: var(--accent);
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: 1px solid var(--border);
+      padding: 8px 12px;
+      font-family: var(--sans);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      cursor: pointer;
+      color: var(--ink);
+    }
+
+    /* PAGE TITLE */
+    .page-title-section {
+      padding: 64px 0 48px;
+      border-bottom: 1px solid var(--border);
+      background: var(--warm-white);
+    }
+
+    .page-title-section h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      letter-spacing: -1px;
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+
+    .page-title-section p {
+      font-size: 1.15rem;
+      color: var(--muted);
+      max-width: 640px;
+      line-height: 1.8;
+      font-style: italic;
+    }
+
+    /* CONTACT GRID */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 56px;
+      padding: 56px 0 64px;
+    }
+
+    /* CONTACT FORM */
+    .contact-form h2 {
+      font-size: 1.6rem;
+      margin-bottom: 8px;
+      letter-spacing: -0.5px;
+    }
+
+    .contact-form .form-subtitle {
+      font-family: var(--sans);
+      font-size: 0.8rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 32px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .form-group {
+      margin-bottom: 24px;
+    }
+
+    .form-group label {
+      display: block;
+      font-family: var(--sans);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+
+    .form-group label .required {
+      color: var(--accent);
+      margin-left: 2px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 14px 16px;
+      border: 1px solid var(--border);
+      background: var(--warm-white);
+      font-family: var(--serif);
+      font-size: 0.95rem;
+      color: var(--ink);
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      border-radius: 0;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 2px rgba(155, 123, 91, 0.1);
+    }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+      color: #b5b0a8;
+      font-style: italic;
+    }
+
+    .form-group select {
+      cursor: pointer;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M2 4l4 4 4-4' stroke='%236b6560' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 16px center;
+      padding-right: 40px;
+    }
+
+    .form-group textarea {
+      min-height: 160px;
+      resize: vertical;
+      line-height: 1.7;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .form-submit {
+      margin-top: 8px;
+    }
+
+    .form-submit button {
+      padding: 16px 40px;
+      background: var(--ink);
+      color: var(--paper);
+      border: none;
+      font-family: var(--sans);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .form-submit button:hover {
+      background: var(--accent);
+    }
+
+    .form-note {
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      color: var(--muted);
+      margin-top: 16px;
+      line-height: 1.6;
+    }
+
+    /* CONTACT INFO SIDEBAR */
+    .contact-info {
+      padding-top: 8px;
+    }
+
+    .contact-info-block {
+      margin-bottom: 40px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .contact-info-block:last-child {
+      border-bottom: none;
+    }
+
+    .contact-info-block h3 {
+      font-family: var(--sans);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      color: var(--ink);
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    .contact-info-block p {
+      font-size: 0.95rem;
+      color: #4a4540;
+      line-height: 1.8;
+      margin-bottom: 12px;
+    }
+
+    .contact-info-block a {
+      color: var(--accent);
+      border-bottom: 1px solid var(--accent-light);
+    }
+
+    .contact-info-block a:hover {
+      color: var(--ink);
+      border-bottom-color: var(--ink);
+    }
+
+    .contact-detail {
+      display: flex;
+      gap: 14px;
+      margin-bottom: 20px;
+      align-items: flex-start;
+    }
+
+    .contact-detail .icon {
+      font-family: var(--sans);
+      font-size: 0.85rem;
+      color: var(--accent);
+      width: 20px;
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+
+    .contact-detail .detail-text {
+      font-size: 0.95rem;
+      color: #4a4540;
+      line-height: 1.6;
+    }
+
+    .contact-detail .detail-text strong {
+      display: block;
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--muted);
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    /* SUBMISSION GUIDELINES */
+    .guidelines-section {
+      padding: 48px 0;
+      border-top: 1px solid var(--border);
+      background: var(--warm-white);
+    }
+
+    .guidelines-section h2 {
+      font-size: 1.6rem;
+      margin-bottom: 24px;
+      letter-spacing: -0.5px;
+    }
+
+    .guidelines-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      margin-top: 32px;
+    }
+
+    .guideline-card {
+      border: 1px solid var(--border);
+      padding: 28px 24px;
+      background: var(--paper);
+    }
+
+    .guideline-card .num {
+      font-family: var(--sans);
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--stone-dark);
+      line-height: 1;
+      margin-bottom: 16px;
+    }
+
+    .guideline-card h4 {
+      font-size: 1.05rem;
+      margin-bottom: 10px;
+      line-height: 1.3;
+    }
+
+    .guideline-card p {
+      font-size: 0.9rem;
+      color: #4a4540;
+      line-height: 1.7;
+    }
+
+    /* FAQ MINI */
+    .contact-faq {
+      padding: 56px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .contact-faq h2 {
+      font-size: 1.6rem;
+      margin-bottom: 28px;
+      letter-spacing: -0.5px;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      text-align: left;
+      padding: 20px 0;
+      font-family: var(--serif);
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--ink);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .faq-question:hover {
+      color: var(--accent);
+    }
+
+    .faq-question .icon {
+      font-family: var(--sans);
+      font-size: 1.2rem;
+      color: var(--accent);
+      transition: transform 0.3s;
+      flex-shrink: 0;
+    }
+
+    .faq-item.open .faq-question .icon {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease, padding 0.35s ease;
+      padding: 0;
+    }
+
+    .faq-item.open .faq-answer {
+      max-height: 400px;
+      padding: 0 0 24px;
+    }
+
+    .faq-answer p {
+      font-size: 0.95rem;
+      color: #4a4540;
+      line-height: 1.8;
+    }
+
+    /* FOOTER */
+    .site-footer {
+      background: var(--ink);
+      color: #b5b0a8;
+      padding: 56px 0 32px;
+      font-family: var(--sans);
+      font-size: 0.8rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .footer-brand {
+      font-family: var(--serif);
+      font-size: 1.3rem;
+      color: var(--paper);
+      margin-bottom: 12px;
+      font-weight: 700;
+    }
+
+    .footer-brand span {
+      display: block;
+      font-family: var(--sans);
+      font-size: 0.6rem;
+      letter-spacing: 2.5px;
+      color: #7a756e;
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+
+    .footer-desc {
+      font-size: 0.8rem;
+      line-height: 1.7;
+      color: #8a857e;
+      max-width: 300px;
+    }
+
+    .footer-col h4 {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--paper);
+      margin-bottom: 16px;
+      font-weight: 600;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col li {
+      margin-bottom: 10px;
+    }
+
+    .footer-col a {
+      color: #8a857e;
+      font-size: 0.8rem;
+    }
+
+    .footer-col a:hover {
+      color: var(--accent-light);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #2e2a26;
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 0.7rem;
+      color: #6b6560;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 1024px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+      }
+      .guidelines-grid {
+        grid-template-columns: 1fr;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .header-inner {
+        flex-wrap: wrap;
+      }
+      .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 12px;
+        padding: 16px 0;
+        border-top: 1px solid var(--border);
+        margin-top: 16px;
+      }
+      .nav-links.open {
+        display: flex;
+      }
+      .menu-toggle {
+        display: block;
+      }
+      .page-title-section h1 {
+        font-size: 2rem;
+      }
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .page-title-section h1 {
+        font-size: 1.6rem;
+      }
+      .contact-form h2 {
+        font-size: 1.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo" aria-label="Exterior Interior Dialogue home">
+          Exterior Interior Dialogue
+          <span>Architecture &amp; Interiors Journal</span>
+        </a>
+        <button class="menu-toggle" aria-label="Toggle navigation menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">Menu</button>
+        <nav aria-label="Main navigation">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" style="color: var(--ink); border-bottom-color: var(--accent);">Contact</a></li>
+            <li><a href="terms.html">Terms Of Privacy</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="cookies.html">Cookies Policy</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+            <li><a href="categories.html">Categories</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- PAGE TITLE -->
+  <section class="page-title-section">
+    <div class="container">
+      <h1>Contact</h1>
+      <p>We welcome letters, story tips, and questions from our readers. Whether you have a project to share, a correction to offer, or simply want to say hello — we read everything we receive.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT GRID -->
+  <main class="container">
+    <div class="contact-grid">
+
+      <!-- CONTACT FORM -->
+      <section class="contact-form" aria-label="Contact form">
+        <h2>Send a Message</h2>
+        <p class="form-subtitle">All fields marked with <span style="color: var(--accent);">*</span> are required</p>
+
+        <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Thank you for your message. This is a demo — no data has been sent.');">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name <span class="required">*</span></label>
+              <input type="text" id="name" name="name" placeholder="e.g. Elena Marchetti" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address <span class="required">*</span></label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject <span class="required">*</span></label>
+            <select id="subject" name="subject" required>
+              <option value="" disabled selected>Select a topic…</option>
+              <option value="general">General Inquiry</option>
+              <option value="editorial">Editorial Submission</option>
+              <option value="project">Project Feature</option>
+              <option value="correction">Correction or Update</option>
+              <option value="partnership">Partnership or Advertising</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message <span class="required">*</span></label>
+            <textarea id="message" name="message" placeholder="Write your message here…" required></textarea>
+          </div>
+
+          <div class="form-submit">
+            <button type="submit">Send Message</button>
+            <p class="form-note">We aim to respond within 3–5 business days. For urgent editorial matters, please email us directly at <a href="mailto:editor@exteriorinteriordialogue.com" style="color: var(--accent); border-bottom: 1px solid var(--accent-light);">editor@exteriorinteriordialogue.com</a>.</p>
+          </div>
+
+        </form>
+      </section>
+
+      <!-- CONTACT INFO -->
+      <aside class="contact-info" aria-label="Contact information">
+
+        <div class="contact-info-block">
+          <h3>General Inquiries</h3>
+          <div class="contact-detail">
+            <span class="icon">✉</span>
+            <div class="detail-text">
+              <strong>Email</strong>
+              <a href="mailto:hello@exteriorinteriordialogue.com">hello@exteriorinteriordialogue.com</a>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <span class="icon">✎</span>
+            <div class="detail-text">
+              <strong>Editorial</strong>
+              <a href="mailto:editor@exteriorinteriordialogue.com">editor@exteriorinteriordialogue.com</a>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <span class="icon">⚿</span>
+            <div class="detail-text">
+              <strong>Privacy</strong>
+              <a href="mailto:privacy@exteriorinteriordialogue.com">privacy@exteriorinteriordialogue.com</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-info-block">
+          <h3>Editorial Submissions</h3>
+          <p>If you are a designer, architect, or homeowner with a project you would like us to consider for publication, please send a brief description and a few high-resolution images. We review all submissions but cannot guarantee coverage.</p>
+          <p>Please include:</p>
+          <ul style="margin: 0 0 0 20px; color: #4a4540; font-size: 0.95rem; line-height: 1.8;">
+            <li>Project name and location</li>
+            <li>Architect / designer credits</li>
+            <li>5–10 high-resolution images (JPEG or PNG)</li>
+            <li>A short project narrative (200–400 words)</li>
+          </ul>
+        </div>
+
+        <div class="contact-info-block">
+          <h3>Response Times</h3>
+          <p>We receive a high volume of correspondence. While we read every message, we are not always able to respond individually. General inquiries are typically answered within 3–5 business days. Editorial submissions may take longer to review.</p>
+          <p>If your matter is urgent, please indicate so in the subject line of your email.</p>
+        </div>
+
+      </aside>
+    </div>
+
+    <!-- SUBMISSION GUIDELINES -->
+    <section class="guidelines-section" aria-label="Submission guidelines">
+      <h2>Submission Guidelines</h2>
+      <p style="max-width: 720px; color: #4a4540; line-height: 1.8; margin-bottom: 8px;">We are always looking for thoughtful, well-researched stories about residential architecture, interior design, and the built environment. Before submitting, please review our guidelines below.</p>
+
+      <div class="guidelines-grid">
+        <div class="guideline-card">
+          <div class="num">01</div>
+          <h4>Original Work</h4>
+          <p>We only consider original, unpublished work. If your piece has appeared elsewhere — including personal blogs or social media — please let us know. Simultaneous submissions are acceptable, but please notify us immediately if your work is accepted elsewhere.</p>
+        </div>
+        <div class="guideline-card">
+          <div class="num">02</div>
+          <h4>Depth Over Trend</h4>
+          <p>We prioritize substance over spectacle. We are less interested in trend pieces and more interested in essays that explore the why behind design decisions — the history, the material science, the human experience.</p>
+        </div>
+        <div class="guideline-card">
+          <div class="num">03</div>
+          <h4>Visual Quality</h4>
+          <p>If your submission includes photography, please ensure images are high-resolution (at least 2000px on the long edge), properly credited, and licensed for publication. We do not use AI-generated imagery for editorial features.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT FAQ -->
+    <section class="contact-faq" id="contact-faq" aria-label="Contact frequently asked questions">
+      <h2>Contact FAQ</h2>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            How long does it take to hear back?
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>General inquiries are typically answered within 3–5 business days. Editorial submissions may take 2–4 weeks to review. If you have not heard from us after four weeks, please feel free to follow up — but do check your spam folder first.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do you accept guest posts?
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes, we accept a limited number of guest posts from architects, designers, and educators. We do not accept posts that are primarily promotional or that link excessively to commercial products. Please pitch your idea before writing a full draft.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Can I republish an article from your site?
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>You may share links to our articles and quote brief excerpts for non-commercial purposes, provided you credit Exterior Interior Dialogue and link back to the original article. For commercial use or full republication, please contact us for licensing information.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do you offer advertising or sponsored content?
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>We do not accept sponsored posts or paid placements. Our content is editorially independent. We do participate in affiliate partnerships with carefully vetted brands, and we may occasionally run display advertising. For partnership inquiries, please email <a href="mailto:hello@exteriorinteriordialogue.com" style="color: var(--accent); border-bottom: 1px solid var(--accent-light);">hello@exteriorinteriordialogue.com</a>.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            Exterior Interior Dialogue
+            <span>Architecture &amp; Interiors Journal</span>
+          </div>
+          <p class="footer-desc">Independent editorial publication exploring residential architecture, modern interiors, material innovation, and the timeless dialogue between exterior form and interior life.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html#interior-design">Interior Design</a></li>
+            <li><a href="index.html#architecture">Architecture</a></li>
+            <li><a href="index.html#materials">Materials</a></li>
+            <li><a href="index.html#lighting">Lighting</a></li>
+            <li><a href="index.html#space-planning">Space Planning</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">RSS Feed</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 Exterior Interior Dialogue. All rights reserved.</div>
+        <div>Made with care for thoughtful design.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    // FAQ TOGGLE
+    document.querySelectorAll('.faq-question').forEach(button => {
+      button.addEventListener('click', function() {
+        const item = this.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+
+        // Close all other FAQ items
+        document.querySelectorAll('.faq-item').forEach(otherItem => {
+          if (otherItem !== item) {
+            otherItem.classList.remove('open');
+            otherItem.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+          }
+        });
+
+        // Toggle current item
+        if (isOpen) {
+          item.classList.remove('open');
+          this.setAttribute('aria-expanded', 'false');
+        } else {
+          item.classList.add('open');
+          this.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+
+    // SMOOTH SCROLL FOR INTERNAL LINKS
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          e.preventDefault();
+          targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          // Close mobile menu if open
+          document.querySelector('.nav-links')?.classList.remove('open');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
